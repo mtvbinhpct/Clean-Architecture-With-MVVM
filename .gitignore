@@ -54,3 +54,5 @@ app.*.map.json
 .dart_tool/flutter_build/e94a052867c158b6e1d0231b09b8f798/flutter_assets.d
 .dart_tool/flutter_build/e94a052867c158b6e1d0231b09b8f798/kernel_snapshot.d
 .dart_tool/flutter_build/e94a052867c158b6e1d0231b09b8f798/kernel_snapshot.stamp
+/.dart_tool/package_config_subset
+/.dart_tool/package_config.json
