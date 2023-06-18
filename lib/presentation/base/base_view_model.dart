@@ -1,8 +1,13 @@
-abstract class BaseViewModel extends BaseViewModelInputs implements BaseViewModelOutputs {}
+import 'package:flutter/material.dart';
+import '../../common/enum.dart';
 
-abstract class BaseViewModelInputs {
-  void start();
-  void dispose();
+abstract class BaseViewModel extends ChangeNotifier {
+  ViewState _state = ViewState.idle;
+
+  ViewState get state => _state;
+
+  void setState(ViewState viewState) {
+    _state = viewState;
+    notifyListeners();
+  }
 }
-
-abstract class BaseViewModelOutputs {}

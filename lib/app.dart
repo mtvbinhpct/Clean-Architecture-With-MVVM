@@ -1,6 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_clean_architecture/config/locator_config.dart';
 import 'package:flutter_clean_architecture/presentation/resources/routes_manager.dart';
 import 'presentation/resources/theme_manager.dart';
+
+Future<void> mainApp() async {
+  await setup();
+  runApp(MyApp());
+}
+
+Future<void> setup() async {
+  setupLocator();
+}
 
 class MyApp extends StatefulWidget {
   const MyApp._internal(); // private name constructor
